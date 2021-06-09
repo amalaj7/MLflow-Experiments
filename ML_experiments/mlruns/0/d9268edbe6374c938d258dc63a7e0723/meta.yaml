@@ -1,0 +1,15 @@
+artifact_uri: file:///Z:/Ineuron/MLOPS/MLFLOW_Experiments/ML_experiments/mlruns/0/d9268edbe6374c938d258dc63a7e0723/artifacts
+end_time: 1623230861036
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: d9268edbe6374c938d258dc63a7e0723
+run_uuid: d9268edbe6374c938d258dc63a7e0723
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1623230860118
+status: 3
+tags: []
+user_id: Amal

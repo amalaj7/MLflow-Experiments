@@ -62,5 +62,5 @@ if __name__ == "__main__":
         print("  MAE: %s" % mae)
         print("  R2: %s" % r2)
 
-# TO run : python autolog_elastic.py 0.5 0.6
-# For UI : mlflow ui
+# TO run with your custom params: python autolog_elastic.py 0.9 0.7
+# For UI to view: mlflow ui
