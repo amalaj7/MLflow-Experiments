@@ -14,7 +14,7 @@ X_test = X_test / 255.
 mlflow.tensorflow.autolog()
 with mlflow.start_run():
     LAYERS = [tf.keras.layers.Flatten(input_shape=[28, 28], name="inputLayer"),
-              tf.keras.layers.Dense(350, activation="relu", name="hiddenLayer1"),
+              tf.keras.layers.Dense(350, name="hiddenLayer1"),
               tf.keras.layers.BatchNormalization(),
               tf.keras.layers.Dense(300, activation="relu", name="hiddenLayer2"),
               tf.keras.layers.Dropout(0.5),
