@@ -1,0 +1,4 @@
+artifact_location: file:///Z:/Ineuron/MLOPS/MLFLOW_Experiments/ML_experiments/mlruns/2
+experiment_id: '2'
+lifecycle_stage: active
+name: Pipeline Experiments
