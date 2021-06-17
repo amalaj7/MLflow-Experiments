@@ -1,0 +1,4 @@
+artifact_location: file:///Z:/Ineuron/MLOPS/MLFLOW_Experiments/ML_experiments/mlruns/3
+experiment_id: '3'
+lifecycle_stage: active
+name: Spam Classifier Experiments
