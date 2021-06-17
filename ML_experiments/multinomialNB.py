@@ -1,6 +1,5 @@
 # Importing essential libraries
 import pandas as pd
-import pickle
 import mlflow
 from sklearn.metrics import classification_report, accuracy_score
 import nltk
@@ -48,14 +47,9 @@ for i in range(0, df.shape[0]):
 cv = CountVectorizer(max_features=2500)
 X = cv.fit_transform(corpus).toarray()
 
-# Extracting dependent variable from the dataset
 y = pd.get_dummies(df['label'])
 y = y.iloc[:, 1].values
 
-# Creating a pickle file for the CountVectorizer
-# pickle.dump(cv, open('cv-transform.pkl', 'wb'))
-
-# Model Building
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=0)
 
@@ -70,6 +64,5 @@ with mlflow.start_run():
     print('Test Accuracy Score : ', accuracy_score(y_test, my_prediction))
     mlflow.sklearn.log_model(classifier, "my_model")
 
-# # Creating a pickle file for the Multinomial Naive Bayes model
 # filename = 'spam-sms-mnb-model.pkl'
 # pickle.dump(classifier, open(filename, 'wb'))
